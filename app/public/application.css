@@ -1,0 +1,13 @@
+.robot-display {
+  background-color: #F0F8FF;
+  align-content: center;
+  border-width: 2px;
+  border-color: green;
+}
+
+.topper { height: 125px;
+          background-color: #80bfff;
+          border: 1px solid #CCC;
+          width: 100%;
+          margin: 0px auto;
+        }

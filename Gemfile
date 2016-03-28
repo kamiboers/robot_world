@@ -1,0 +1,13 @@
+source 'https://rubygems.org'
+
+gem 'sinatra', require: 'sinatra/base'
+gem 'shotgun'
+gem 'pry'
+gem 'minitest'
+gem 'webrick'
+gem 'capybara'
+gem 'launchy'
+gem 'sequel'
+gem 'sqlite3'
+gem 'faker'
+gem 'csv'

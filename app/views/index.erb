@@ -1,0 +1,20 @@
+<html>
+  <head>
+    <title>ROBOT WORLD</title>
+  </head>
+  <body>
+    <h1>All the Robots!</h1>
+
+    <% @robots.each do |robot| %>
+
+      <div class="col-md-6 robot-display"><h3>(<%= robot.id %>) <a href="/robots/<%= robot.id %>"><%= robot.name %></a></h3>
+        <br><img src = "<%= robot.avatar %>" width="75%"><br>
+      <a class="btn btn-warning" href="/robots/<%= robot.id %>/edit">Edit</a>
+      <form action="/robots/<%= robot.id %>" method="POST">
+        <input type="hidden" name="_method" value="DELETE">
+        <input type="submit" value="delete"/>
+      </form>
+    <% end %>
+
+  </body>
+</html>
