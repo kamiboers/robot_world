@@ -3,21 +3,35 @@
 <h1>Robot Creator</h1>
 
 <div class="col-md-6">
-<img src="https://lh3.googleusercontent.com/Lzb9Cd06OpMwmkN8FwNcGMiQrFX5M58WeMsX0CO4v3MH9jzOuZCx30YCXMkqrIvipM1LfHXA5BCTK42RuEnY1oO0x08Rc8lBcP4TkfyoVaeIpERTm2pdHx3dsyo6_ed9Wdq0QZdEhPnbTsok4I7GxuNRl4g9siExz-XVjOA1orsLeQIz1BJkyOLXaZTTZ63FGFaCnBvKgs7K6zxRH1j1oQPJliQxmcto4ZPwAS7Sd8FVcxmLAlYh20bEXCuSTNOrFLeZxUXuVGcFNHnJvR4chcIwiGQPllFQYl5NZ7mzpcgaIQQcn43PCLQvmDAMsa-bM9pFMmn-vOrjliKIjD5kWng_IcLCrZpJprn_2FqWJGu53laq9FLK1jgGiPIaUJb6TCbBkYtp8o2x25mbXC-SgXG9vinoHV5t2-Q1ZF4-4PqKrHToZ8iDN0A2rqh9x3JxDtEdnWk8-jL_nqU9rKm8APDpqPjFxQvtPBZFjFLn1XQatGXxCs96O57x04TCWHHVhJdQCJWa1jueQgkyJnCQEcAnJHgh_jWQ0W1ph3zd9cA2RzDkFfBRF5LDiG6SHFAhE_HP=s1364-no" width="85%">
+  <img src="https://lh3.googleusercontent.com/Lzb9Cd06OpMwmkN8FwNcGMiQrFX5M58WeMsX0CO4v3MH9jzOuZCx30YCXMkqrIvipM1LfHXA5BCTK42RuEnY1oO0x08Rc8lBcP4TkfyoVaeIpERTm2pdHx3dsyo6_ed9Wdq0QZdEhPnbTsok4I7GxuNRl4g9siExz-XVjOA1orsLeQIz1BJkyOLXaZTTZ63FGFaCnBvKgs7K6zxRH1j1oQPJliQxmcto4ZPwAS7Sd8FVcxmLAlYh20bEXCuSTNOrFLeZxUXuVGcFNHnJvR4chcIwiGQPllFQYl5NZ7mzpcgaIQQcn43PCLQvmDAMsa-bM9pFMmn-vOrjliKIjD5kWng_IcLCrZpJprn_2FqWJGu53laq9FLK1jgGiPIaUJb6TCbBkYtp8o2x25mbXC-SgXG9vinoHV5t2-Q1ZF4-4PqKrHToZ8iDN0A2rqh9x3JxDtEdnWk8-jL_nqU9rKm8APDpqPjFxQvtPBZFjFLn1XQatGXxCs96O57x04TCWHHVhJdQCJWa1jueQgkyJnCQEcAnJHgh_jWQ0W1ph3zd9cA2RzDkFfBRF5LDiG6SHFAhE_HP=s1364-no" width="85%">
 </div>
 <div class="col-md-6">
-<form action='/robots' method='POST'>
-
   <p>
-    Create a new robot:
+    <h3>Create a new robot:</h3>
   </p>
-  <input type='text' name='robot[name]' value ='Robot Name'/><br/>
-  <input type='text' name='robot[city]' value ='City'/><br/>
-  <input type='text' name='robot[state]' value ='State'/><br/>
-  <input type='text' name='robot[birthdate]' value ='Birthdate'/><br/>
-  <input type='text' name='robot[date_hired]' value ='Date of Hire'/><br/>
-  <input type='text' name='robot[department]' value ='Department'/><br/>
-  <input type='text' name='robot[avatar]' value ='Avatar URL'/><br/>
-  <input type='submit'/>
-</form>
+
+  <form action='/robots' method='POST'>
+    <div class="form-group">
+      <input type='text' class="form-control" name='robot[name]' id ='Robot Name' placeholder="Name"/><br/>
+    </div>
+    <div class="form-group">
+      <input type='text' class="form-control" name='robot[city]' id ='City' placeholder="City"/><br/>
+    </div>
+    <div class="form-group">
+      <input type='text' class="form-control" name='robot[state]' id ='State' placeholder="State"/><br/>
+    </div>
+    <div class="form-group">
+      <input type='text' class="form-control" name='robot[birthdate]' id ='Birthdate' placeholder="Birthdate"/><br/>
+    </div>
+    <div class="form-group">
+      <input type='text' class="form-control" name='robot[date_hired]' id ='Date of Hire' placeholder="Date of Hire"/><br/>
+    </div>
+    <div class="form-group">
+      <input type='text' class="form-control" name='robot[department]' id ='Department' placeholder="Department"/><br/>
+    </div>
+    <div class="form-group">
+      <input type='text' class="form-control" name='robot[avatar]' id ='Avatar' placeholder="Avatar URL"/><br/>
+    </div>
+    <button type='submit' class='btn btn-info'>Submit</button>
+  </form>
 </div>

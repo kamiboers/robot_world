@@ -1,1 +1,17 @@
-Dashboard Content
+
+  <h2> Average Robot Age: <%= average_robot_age %> time units </h2>
+
+<br>
+<div class="container-fluid">
+  <h2>Robot Departments</h2>
+<table class="table table-striped table-hover">
+<tr><td class="h4">Occupation</td><td class="h4">Count</td></tr>
+
+<% find_all_by_department.each do |row|  %>
+
+  <tr><td> <%= row[0].capitalize %> </td>
+    <td> <%= row[1] %> </td></tr>
+  <% end %>
+
+</table>
+</div>

@@ -7,13 +7,15 @@
 
     <% @robots.each do |robot| %>
 
-      <div class="col-md-6 robot-display"><h3>(<%= robot.id %>) <a href="/robots/<%= robot.id %>"><%= robot.name %></a></h3>
-        <br><img src = "<%= robot.avatar %>" width="75%"><br>
-      <a class="btn btn-warning" href="/robots/<%= robot.id %>/edit">Edit</a>
+      <div class="col-md-5 robot-display img-rounded"><h3>(<%= robot.id %>) <a href="/robots/<%= robot.id %>"><%= robot.name %></a></h3>
+        <br><img class="center-block" src="<%= robot.avatar %>" width="75%"><br>
       <form action="/robots/<%= robot.id %>" method="POST">
+        <a class="btn btn-info pull-right" href="/robots/<%= robot.id %>/edit">Edit</a>
         <input type="hidden" name="_method" value="DELETE">
-        <input type="submit" value="delete"/>
+        <button type="submit" class="btn btn-danger pull-right">Delete</button>
       </form>
+
+    </div>
     <% end %>
 
   </body>

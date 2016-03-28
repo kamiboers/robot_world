@@ -1,14 +1,31 @@
-<h1>Editing a Robot Profile</h1>
+<div class="col-md-6 robot-display">
+  <h3><%= @robot.name %></h3>
+  <br><img src = "<%= @robot.avatar %>" width="75%"><br>
+</div>
+
+<div class="col-md-6">
+<h2>Edit Robot Profile</h2>
 
 <form action="/robots/<%= @robot.id %>" method="post">
-  <p>Edit</p>
   <input type="hidden" name="_method" value="PUT" />
-  <input type='text' name='robot[name]' value="<%= @robot.name %>"/><br/>
-  <input type='text' name='robot[city]' value="<%= @robot.city %>"/><br/>
-  <input type='text' name='robot[state]' value="<%= @robot.state %>"/><br/>
-  <input type='text' name='robot[birthdate]' value="<%= @robot.birthdate %>"/><br/>
-  <input type='text' name='robot[date_hired]' value="<%= @robot.date_hired %>"/><br/>
-  <input type='text' name='robot[department]' value="<%= @robot.department %>"/><br/>
-  <input type='text' name='robot[avatar]' value="<%= @robot.avatar %>"/><br/>
-  <input type='submit'/>
+
+    <div class="form-group">
+      <label for="Robot Name">Robot Name</label>
+      <input type='text' class="form-control" name='robot[name]' id ='Robot Name' value="<%= @robot.name %>"/><br/>
+      <label for="City">City</label>
+      <input type='text' class="form-control" name='robot[city]' id ='City' value="<%= @robot.city %>"/><br/>
+      <label for="State">State</label>
+      <input type='text' class="form-control" name='robot[state]' id ='State' value="<%= @robot.state %>"/><br/>
+      <label for="Birthdate">Birthdate</label>
+      <input type='text' class="form-control" name='robot[birthdate]' id ='Birthdate' value="<%= @robot.birthdate %>"/><br/>
+      <label for="Hire Date">Hire Date</label>
+      <input type='text' class="form-control" name='robot[date_hired]' id ='Date of Hire' value="<%= @robot.date_hired %>"/><br/>
+      <label for="Department">Department</label>
+      <input type='text' class="form-control" name='robot[department]' id ='Department' value="<%= @robot.department %>"/><br/>
+      <label for="Avatar">Avatar</label>
+      <input type='text' class="form-control" name='robot[avatar]' id ='Avatar' value="<%= @robot.avatar %>"/><br/>
+    </div>
+
+  <button type='submit' class='btn btn-info'>Submit</button>
 </form>
+</div>
