@@ -56,7 +56,7 @@ class RobotWorldApp < Sinatra::Base
   end
 
   def find_all_by_department
-    department_array = ((robot_world.all.to_a.each_with_object(Hash.new(0)) { |instance,counts| counts[instance.department] += 1 }).sort_by { |k,v| v }).reverse
+    department_array = ((robot_world.all.to_a.each_with_object(Hash.new(0)) { |instance,counts| counts[instance.department] += 1 })
   end
 
   def average_robot_age
